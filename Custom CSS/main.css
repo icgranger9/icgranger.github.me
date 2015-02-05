@@ -1,3 +1,11 @@
 .jumbotron {
-	background-image: "images/background.jpg"
+	background-image:"images/background.jpg";
+}
+
+}
+.jumbotron h1{
+    color:#fff;
+    font-size:48px;
+    font-weight:bold;
+    font-family:'shift',sans-serif;
 }
