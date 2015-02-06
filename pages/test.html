@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- meta info -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ian Granger Home page">
+    <meta name="author" content="Ian Granger">
+
+	<!-- Bootstrap -->
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../Custom CSS/main.css" rel="stylesheet">
+
+	<!-- moble friendly -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<title>Ian Granger</title>
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-	<h1> Hello! </h1>
-	<p> they all link to the same page. <br> 
-		<small>this page</small> 
-	</p>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-items">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			
+			<div class="collapse navbar-collapse" id="nav-items">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="../index.html">Home<span class="sr-only">(current)</span></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../pages/test.html">Link</a></li>
+					<li><a href="../pages/test.html">Link</a></li>
+					<li><a href="../pages/test.html">Link</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Hello!</h1>
+			<p> they all link to the same page. <br> 
+			<small>this page</small> <br><br>
+			<a href="../index.html">Back</a>
+			</div>
+	</div>	
 </body>
 </html>
