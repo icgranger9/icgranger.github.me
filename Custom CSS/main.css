@@ -9,4 +9,57 @@
     font-weight:bold;
     font-family:'shift',sans-serif;
 }
-body { padding-top: 60px; }
+body { 
+	padding-top: 60px; 
+}
+
+.navbar-inverse {
+  background-color: #222222;
+  border-color: transparent;
+}
+.navbar-inverse .navbar-brand {
+  color: #d3232a;
+
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:active,
+.navbar-inverse .navbar-brand.active {
+  color: #a71c21;
+}
+.navbar-inverse .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.02);
+}
+.navbar-inverse .navbar-toggle {
+  background-color: #d3232a;
+  border-color: #d3232a;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #d3232a;
+}
+.navbar-inverse .nav li a {
+
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+}
+.navbar-inverse .nav li a:hover,
+.navbar-inverse .nav li a:focus {
+  color: #d3232a;
+  outline: none;
+}
+.navbar-inverse .navbar-nav > .active > a {
+  border-radius: 0;
+  color: white;
+  background-color: #d3232a;
+}
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #a71c21;
+}
