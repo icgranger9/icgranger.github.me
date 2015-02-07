@@ -27,11 +27,9 @@ body {
 }
 
 .navbar-inverse .nav li a {
-  text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
   color: white;
-	text-transform: uppercase;
 	font-weight: 400;
 	letter-spacing: 1px;
 	color: white;
