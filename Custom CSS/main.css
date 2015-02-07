@@ -27,7 +27,6 @@ body {
 }
 
 .navbar-inverse .nav li a {
-
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
@@ -38,19 +37,21 @@ body {
   color: #d3232a;
   outline: none;
 }
+
 .navbar-inverse .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
   background-color: #d3232a;
 }
 
-
-
-.navbar-inverse .navbar-nav > .active > a:hover,
+.avbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: white;
   background-color: #a71c21;
 }
+
+
+
 
 
 .portfolio-modal .modal-content {
