@@ -1,25 +1,25 @@
-.jumbotron {
-	background-color:white;
-	font-color: blue;
-}
-
-}
-.jumbotron h1{
-	color:#fff;
-	font-size:48px;
-	font-weight:bold;
-	font-family:'shift',sans-serif;
-}
-
-.neighborhood-guides { 
-	background-color:white;
-	padding-top: 20px;
-	padding-bottom: 20px; 
-}
 body { 
 	padding-top: 50px;
 	background-color:LightGray;  
 }
+
+.jumbotron{
+	background-color:white;
+	font-color: blue;
+}
+
+.pics{ 
+	background-color:white;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
+
+.projects{ 
+	background-color:white;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
+
 
 /* NOT MY CODE, Try to replace */
 .navbar-inverse {
