@@ -11,15 +11,13 @@
 
 	<!-- Bootstrap -->
 	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
-	<!-- <link href="bootstrap/fonts/font-awesome.css" rel="stylesheet"> -->
-	<!--<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">-->
 
-		<!-- need to download jquery correctly, don't rely on website -->
+	<!-- need to download jquery correctly, don't rely on website -->
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script src="../bootstrap/js/bootstrap.min.js"></script>
 
 	<!-- MY CSS, not 100% working --> 
-	<link href="../Custom CSS/main.css" rel="stylesheet">
+	<link href="hackFU.css" rel="stylesheet">
 
 	<!-- moble friendly -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,8 +25,8 @@
 	<title>Ian Granger</title>
 </head>
 
-<body>
 
+<body>
 	<!--nav bar --> 
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">	
@@ -44,74 +42,56 @@
 					<li class="active"><a href="home.html">hackFU<span class="sr-only">(current)</span></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="about.html">About</a></li>
-					<li><a href="sponsors.html">Sponsors</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#sponsors">Sponsors</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<div class="jumbotron">
-		<div class="container">
+	<!-- intro -->
+	<section class="header" id="home">
+		<div class="header-info">
+			<div class="info-date">Date of event </div>
+			<div class="logo"> <img src="icon.png"> </div>
+			<div class="info-location"> Location </div>
+		</div>
+		<div class="header-title">
 			<h1>hackFU</h1>
-			<p>Join us at New Yorks most intimate hackathon</p>
-			<a href="register.html" class="btn large">SIGN UP TODAY</a>
-			</div>
-	</div>
+			<p>Join us at New York's most intimate hackathon.</p>
+			<button type="button" class="btn"> 
+				<a href="register.html" class="btn large">SIGN UP TODAY</a>
+			</button>
+		</div>
+	</section>
 
-	<div class="pics">
+	<!-- about section -->
+	<section class="about" id="about">
 			<div class='container'>
-					<h2>Pics</h2>
-					<p>Description</p>
-					<div class='row'>
-
-						<!-- pics 1 and 4 -->
-						<div class="col-md-4">
-							<div class='thumbnail'>
-								<a href="../pages/pics/pic1.html">
-									<img src="../images/background.jpg"/>
-								</a>
-							</div>
-							<div class='thumbnail'>
-								<a href="../pages/pics/pic3.html" >
-									<img src="../images/background.jpg"/>
-									<!--<img style="width: 350px; height: 220px;" src="images/localHackDay.jpg">-->
-								</a>
-							</div>
-						</div>
-
-						<!-- pics 2 and 5 -->
-						<div class="col-md-4">
-							<div class='thumbnail'>
-								<a href="../pages/pics/pic2.html" >
-									<img src="../images/background.jpg">
-								</a>
-							</div>
-							<div class= 'thumbnail'>
-								<a href="../pages/pics/pic5.html" >
-									<img src="../images/background.jpg">
-								</a>
-							</div>
-						</div>
-
-						<!-- pics 3 and 6 -->
-						<div class="col-md-4">
-							<div class='thumbnail'>
-								<a href="../pages/pics/pic3.html" >
-									<img src="../images/background.jpg">
-								</a>
-							</div>
-							<div class='thumbnail'>
-								<a href="../pages/pics/pic6.html" >
-									<img src="../images/background.jpg">
-								</a>
-							</div>
-						</div>
-					</div>
+				<h2>About</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia justo a dolor malesuada, ac egestas lorem vestibulum. Integer fermentum ante ac lacus auctor, eu tempus nibh accumsan. Nulla placerat ante vitae malesuada finibus. Pellentesque vel libero ultrices mauris varius cursus. Cras varius iaculis est, sit amet consequat turpis. Donec ut mi sed quam sollicitudin fringilla ac vel mauris. Maecenas porttitor massa et nunc tristique mollis. Praesent porta interdum massa eget tempor. Ut aliquet congue nisl at iaculis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed cursus quam. Vivamus tincidunt libero mi, vitae tempus nibh scelerisque eget. Mauris cursus consectetur consectetur. Donec ut lorem et mi placerat viverra.
+				</p>
 			</div>
-	</div>
+	</section>
 
-	<div class="learn-more">
+	<!-- banner pic 1 -->
+	<section class="banner">
+		<p style="text-align: center; background-color: Lightgray;"> BANNER PIC HERE </p>
+	</section>
+
+	<!-- sponors section -->
+	<section class="sponsors" id="sopnsors">
+		<p> Sponsor info here </p>
+	</section>
+
+	<!-- banner pic 2 -->
+	<section class="banner">
+		<p style="text-align: center; background-color: Lightgray;"> BANNER PIC HERE </p>
+	</section>
+
+	<!-- footer (change to footer) -->
+	<section class="learn-more">
 		<div class="container">
 			<div class="row">
 					<div class="col-md-4">
@@ -131,6 +111,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 </body>
 </html>

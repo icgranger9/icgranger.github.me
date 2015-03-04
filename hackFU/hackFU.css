@@ -1,0 +1,116 @@
+body { 
+	background-color:white;  
+	text-align: center; 
+}
+
+/* CSS pertaining to the header */
+.header {
+	margin: auto;
+	margin-top: 0em;
+	padding-top: 17.5em;
+	padding-bottom: 6.66667em;
+	margin-bottom: 0em;
+	padding-left: 75px;
+	padding-right: 75px;
+	background-color: LightGray;
+}
+
+.header-info {
+	height: 80px;
+	margin-bottom: 100px;
+}
+.info-date {
+	width: 42.5%;
+	font-size: 24px;
+	float: left;
+	display: block;
+	line-height: 80px;
+	text-align: right;
+}
+
+.logo {
+	width: 15%;
+	float: left;
+	display: block;
+	line-height: 80px;
+}
+.logo img{
+	height: 80px;
+	width: 80px;
+}
+
+.info-location {
+	width: 42.5%;
+	font-size: 24px;
+	float: left;
+	display: block;
+	line-height: 80px;
+	text-align: left;
+}
+.header-title {
+	padding-bottom: 6.66667em;
+}
+.header-title h1 {
+	font-size: 120px;
+}
+
+.header-title p {
+	font-size: 60px; 
+	text-transform: uppercase;
+	padding-bottom: 40px;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+.btn {
+	color: #a71c21;
+	font-size: 25px;
+
+}
+
+/* CSS pertaining to the about section */
+.about{ 
+	background-color:white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 5em;
+	padding-right: 5em;
+}
+.about p{
+	font-weight: 400;
+	font-size: 32px;
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-bottom: 80px;
+}
+
+
+/* NOT MY CODE, Try to replace (used for nav bar)*/
+.navbar-inverse {
+	background-color: #333;
+}
+
+.navbar-inverse .nav li a {
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: white;
+}
+.navbar-inverse .nav li a:hover,s
+.navbar-inverse .nav li a:focus {
+	color: #d3232a;
+	outline: none;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+	border-radius: 0;
+	color: white;
+	background-color: #d3232a ;
+}
+
+.avbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+      color: white;
+      background-color: #a71c21;
+}
