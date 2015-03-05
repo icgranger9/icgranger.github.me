@@ -58,8 +58,8 @@ body {
 	font-size: 60px; 
 	text-transform: uppercase;
 	padding-bottom: 40px;
-	padding-right: 5%;
-	padding-left: 5%;
+	padding-right: 10%;
+	padding-left: 10%;
 }
 .btn {
 	color: #a71c21;
@@ -81,6 +81,14 @@ body {
 	padding-right: 10%;
 	padding-left: 10%;
 	padding-bottom: 80px;
+}
+
+.banner {
+	background-color: Lightgrey;
+	line-height: 80px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
 }
 
 
