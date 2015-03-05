@@ -114,8 +114,8 @@ body {
 .banner-top {
 	background: url("pic5.JPG");
 	background-size: cover;
-	background-position: 0px -120px;
-	background-color: black;
+	background-position: 0% 35%;
+	background-color: #333;
 	height: 480px;
 	width: 100%;
 	margin-bottom: 10px;
@@ -135,7 +135,7 @@ body {
 .banner-bottom {
 	background: url("pic1.jpg");
 	background-size: cover;
-	background-position: 0px -140px;
+	background-position: 0px 35%;
 	background-color: black;
 	height: 480px;
 	width: 100%;
