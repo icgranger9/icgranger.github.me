@@ -9,7 +9,7 @@ body {
 	margin-top: 0em;
 	margin-bottom: 0em;
 	padding-top: 17.5em;
-	padding-bottom: 6.66667em;
+	padding-bottom: 5%;
 	padding-left: 75px;
 	padding-right: 75px;
 	background-color: LightGray;
@@ -114,7 +114,7 @@ body {
 .banner-top {
 	background: url("pic5.jpg");
 	background-size: cover;
-	background-position: 0px -175px;
+	background-position: 0px -120px;
 	background-color: black;
 	height: 480px;
 	width: 100%;
