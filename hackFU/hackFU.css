@@ -7,16 +7,16 @@ body {
 .header {
 	margin: auto;
 	margin-top: 0em;
+	margin-bottom: 0em;
 	padding-top: 17.5em;
 	padding-bottom: 6.66667em;
-	margin-bottom: 0em;
 	padding-left: 75px;
 	padding-right: 75px;
 	background-color: LightGray;
 }
 
 .header-info {
-	height: 80px;
+	height: 100px;
 	margin-bottom: 100px;
 }
 .info-date {
@@ -24,7 +24,7 @@ body {
 	font-size: 24px;
 	float: left;
 	display: block;
-	line-height: 80px;
+	line-height: 100px;
 	text-align: right;
 }
 
@@ -32,11 +32,11 @@ body {
 	width: 15%;
 	float: left;
 	display: block;
-	line-height: 80px;
+	line-height: 100px;
 }
 .logo img{
-	height: 80px;
-	width: 80px;
+	height: 100px;
+	width: 100px;
 }
 
 .info-location {
@@ -44,7 +44,7 @@ body {
 	font-size: 24px;
 	float: left;
 	display: block;
-	line-height: 80px;
+	line-height: 100px;
 	text-align: left;
 }
 .header-title {
@@ -75,6 +75,10 @@ body {
 	padding-left: 5em;
 	padding-right: 5em;
 }
+
+.about h1{
+	font-size: 48px;
+}
 .about p{
 	font-weight: 400;
 	font-size: 32px;
@@ -82,13 +86,61 @@ body {
 	padding-left: 10%;
 	padding-bottom: 80px;
 }
+/* CSS for keyInfo */
+.keyInfo {
+	background-color: #333;
+	color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.time {
+	padding-left: 50px;
+	font-size: 64px;
+	text-transform: uppercase;
+}
 
-.banner {
-	background-color: Lightgrey;
-	line-height: 80px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+.people {
+	padding-right: 50px;
+	font-size: 64px;
+	text-transform: uppercase;
+}
 
+.location {
+	padding-top: 120px;
+	font-size: 128px;
+	text-transform: uppercase;
+}
+/* CSS for top banner */
+.banner-top {
+	background: url("pic5.jpg");
+	background-size: cover;
+	background-position: 0px -175px;
+	background-color: black;
+	height: 480px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+/* CSS for sponsor section */
+.sponsors {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.sponsors h1{
+	font-size: 48px;
+}
+
+/* CSS for bottom banner */
+.banner-bottom {
+	background: url("pic1.jpg");
+	background-size: cover;
+	background-position: 0px -175px;
+	background-color: black;
+	height: 480px;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 
