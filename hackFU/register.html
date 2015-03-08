@@ -14,12 +14,12 @@
 	<!-- <link href="bootstrap/fonts/font-awesome.css" rel="stylesheet"> -->
 	<!--<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">-->
 
-		<!-- need to download jquery correctly, don't rely on website -->
+	<!-- need to download jquery correctly, don't rely on website -->
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script src="../bootstrap/js/bootstrap.min.js"></script>
 
 	<!-- MY CSS, not 100% working --> 
-	<link href="../Custom CSS/main.css" rel="stylesheet">
+	<link href="Register.css" rel="stylesheet">
 
 	<!-- moble friendly -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,15 +27,13 @@
 	<title>Ian Granger</title>
 </head>
 
-<body>
+<body style="text-align: left;">
 
 	<!--nav bar --> 
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">	
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-items">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
 				</button>
 			</div>
 
@@ -43,25 +41,200 @@
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="home.html">hackFU<span class="sr-only">(current)</span></a></li>
 				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="home.html#about">About</a></li>
-					<li><a href="home.html#sponsors">Sponsors</a></li>
-				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<div class="jumbotron">
+	<!-- Registration -->
+	<section class="jumbotron">
 		<div class="container">
-			<h1>register</h1>
+			<h1>Registration</h1>
 		</div>
-	</div>
+	</section>
 
-	<div class="pics">
-		<div class='container'>
-			<h2>Register</h2>
-			<p>Thank you for you interest in registering for hackFU, registration will be open shortly</p>
-		</div>
-	</div>
+	<section class="register">
+		<form class="input-group">
+			<p>First name</p>
+			<input id="f_name" type="text" class="bar" placeholder="Clara">
+			<p>Last name</p>
+			<input id="l_name" type="text" class="bar" placeholder="Lopez">
+			<p>Email</p>
+			<input id="email" type="text" class="bar" placeholder="example.email@fordham.edu" >
+			<p>Phone number</p>
+			<input id="phone" type="text" class="bar" placeholder="(123)-456-7891" >
+			<p>School</p>
+			<input id="organization" type="text" class="bar" placeholder="Fordham University" >
+			<div class="input-group">
+				<p> Dietary restrictions </p>
+				<select id="diet">
+					<option>None</other>
+					<option>Vegitarian</option>
+					<option>Vegan</option>
+					<option>Kosher</option>
+				</select>
+				<div>
+					<input id="diet-other" type="text" class="bar" placeholder="Place other dietary restrictions here" >
+				</div>
+			</div>	
+			<div class="input-group">
+				<p>What languages do you speak:</p>
+				Java: <input type="checkbox" name="languages" id ="Java" value="Java" />
+				C / C++ / C#: <input type="checkbox" name="languages" id ="C" value="C" />
+				Python: <input type="checkbox" name="languages" id ="Python" value="Python"/><br/> 
+				HTML / CSS: <input type="checkbox" name="languages" id ="HTML" value="HTML"/>
+				JavaScript: <input type="checkbox" name="languages" id ="JavaScript" value="JavaScript"/> 
+				PHP: <input type="checkbox" name="languages" id="PHP" value="PHP"/>
+				Android: <input type="checkbox" name="languages" id ="Android" value="Android"/><br/> 
+				IOS: <input type="checkbox" name="languages" id ="IOS" value="IOS"/>
+				Ruby: <input type="checkbox" name="languages" id ="Ruby" value="Ruby"/>
+				CLI: <input type="checkbox" name="languages" id ="CLI" value="CLI"/><br/> 
+				Pearl: <input type="checkbox" name="languages" id ="Pearl" value="Pearl"/>
+				go: <input type="checkbox" name="languages" id ="Go" value="Go"/>
+			</div>
+			<p> Number of hackatons attended </p>
+			<input id="hackathon" type="number" class="bar" placeholder="3">
+			<p> Age </p>
+			<input id="age" type="number" class="bar" placeholder="20">
+			<p> Major </p>
+			<input id="major" type="text" class="bar" placeholder="What are you studying">
+			<div class="input-group">
+				<p> Gender </p>
+				<select id="gender">
+					<option>Female</other>
+					<option>Male</option></br>
+				</select>
+				<div>
+					<input id="gender-other" type="text" class="bar" placeholder="Or, what do you prefer" >
+				</div>
+			</div>	
+			<p> Upload your resume </p>
+			<button class="space" type="button">Choose a file</button>
+			<div class="input-group">
+				<p> Choose your shirt size: </p>
+				<select id="size">
+					<option>Mens Small</option>
+					<option>Mens Medium</option>
+					<option>Mens Large</option>
+					<option>Womens Small</option>
+					<option>Womens Medium</option>
+					<option>Womens Large</option>
+				</select>
+			</div>
+			<p> What do you want to learn most </p>
+			<input id="size" type="text" class="bar" placeholder="Hack NSA">
+			<div>	
+				<button class="space" type="button" onclick="check()">Submit</button>
+			</div>
+		</form>
+	</section>
 </body>
+
+<script> <!-- checks that everything is valid -->
+function check() {
+	var message="OK";
+
+	// Get the value of first name
+	var f_name= document.getElementById("f_name").value;
+
+	// Get the value of last name
+	var l_name= document.getElementById("l_name").value;
+
+	// check the value of email
+	var email= document.getElementById("email").value;
+	if (!email.substring(email.length-3) == "edu") // if it is not an edu. what about sponsors 
+	{
+		message= "email must end in .edu"
+	}
+
+	// Get the value of phone
+	var  phone= document.getElementById("phone").value;
+
+	// Set the value of org
+	var org=document.getElementById("org").selectedIndex;
+
+	// Set the value of diet
+	if(document.getElementById("diet-other").selectedIndex =="")
+	{
+		var z=document.getElementById("diet").selectedIndex;
+		if (z==0) {var diet="Vegitarian"};
+		if (z==1) {var diet="Vegan"};
+		if (z==2) {var diet="Kosher"};
+	}
+	else
+		var diet=document.getElementById("diet-other").selectedIndex;
+
+	// Set the languages
+	var languages
+	//go 		= 1
+	//pearl		= 10
+	//CLI		= 100
+	//Ruby		= 1000
+	//IOS		= 10000
+	//Android	= 100000
+	//PHP		= 1000000
+	//JS		= 10000000
+	//HTML		= 100000000
+	//Python	= 1000000000
+	//C			= 10000000000
+	//Java		= 100000000000
+	if (document.getElementById("Go").value)
+		languages += 1;
+	if (document.getElementById("Pearl").value)
+		languages += 10;
+	if (document.getElementById("CLI").value)
+		languages += 100;
+	if (document.getElementById("Ruby").value)
+		languages += 1000;
+	if (document.getElementById("IOS").value)
+		languages += 10000;
+	if (document.getElementById("Android").value)
+		languages += 100000;
+	if (document.getElementById("PHP").value)
+		languages += 1000000;
+	if (document.getElementById("JavaScript").value)
+		languages += 10000000;
+	if (document.getElementById("HTML").value)
+		languages += 100000000;
+	if (document.getElementById("Python").value)
+		languages += 1000000000;
+	if (document.getElementById("C").value)
+		languages += 10000000000;
+	if (document.getElementById("Java").value)
+		languages += 100000000000;
+
+	//Get the num of hackathons
+	var hackathon = document.getElementById("hackathon").selectedIndex;
+
+	//Get the mjor of hackathons
+	var major = document.getElementById("major").selectedIndex;
+
+	//Gender
+	if(document.getElementById("gender-other").selectedIndex =="")
+	{
+		var x=document.getElementById("gender").selectedIndex;
+		if (x==0) {var gender="Female"};
+		if (x==1) {var gender="Male"};
+	}
+	else
+		var gender=document.getElementById("gender-other").selectedIndex;
+
+	//Resume
+	//do later
+
+	//Shirt size
+	var size=document.getElementById("size").selectedIndex;
+
+	//sends to server
+	if( message=="OK")
+	{
+
+	}
+	else
+	{
+
+	}
+	
+	
+}
+</script>
 </html>
