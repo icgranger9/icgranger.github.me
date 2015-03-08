@@ -19,6 +19,7 @@ body {
 
 .header-info {
 	position: absolute;
+	margin: 0px;
 	bottom: 0px;
 	right: 0px;
 	height: 100px;
@@ -27,35 +28,31 @@ body {
 	color: white;
 	opacity: .9;
 }
-.info-date {
-	width: 42.5%;
+.info {
+	width: 25%;
 	font-size: 171%;
-	float: left;
 	display: block;
 	line-height: 420%;
 	text-align: center;
+	display: block;
+	margin: 0px;
+	position: absolute;
+	bottom: 0px;
 }
 
 .logo {
-	float: left;
-	display: block;
-	line-height: 17.5%;
+	position: absolute;
+	width: 550px;
+	right: 75px;
+	top: 50px;
 }
 .logo img{
-	width: 50%;
+	position: absolute;
+	height: 138px;
+	width: 800px;
+	right: 0px;
 }
 
-.info-location {
-	width: 42.5%;
-	font-size: 171%;
-	float: left;
-	display: block;
-	line-height: 420%;
-	text-align: center;
-	margin-left: 10px;
-	color: white;
-
-}
 .header-title {
 	padding-bottom: 10%;
 }
@@ -69,39 +66,42 @@ body {
 	height: 138px;
 	width: 800px;
 	right: 0px;
-	bottom: 456px;
+	top: 278px;
 	opacity: .9;
 
 }
 
 .header-title p {
-	font-size: 425%; 
+	font-size: 325%; 
 	text-transform: uppercase;
-	margin-bottom: 0px;
+	margin-top: 0px;
 	background-color: #333;
 	color: white;
 	position: absolute;
-	bottom: 200px;
+	top: 222px;
 	right: 0px;
-	width:800px;
+	width:705px;
 	opacity: .9;
 
 }
 
 .btn-wrapper {
 	background-color: #333;
+	padding-top: 10px;
 	position: absolute;
-	bottom: 100px;
+	margin: 0px;
+	top: 352px;
 	right: 0px;
 	height: 100px;
-	width: 800px;
+	width: 705px;
 	opacity: .9;
-	line-height: -420%;
-
+	line-height: 17.5%;
+}
 
 }
 .btn {
-	color: #a71c21;
+	color: maroon;
+	opacity: 1;
 	font-size: 135%;
 
 }
@@ -129,7 +129,7 @@ body {
 /* CSS for keyInfo */
 .keyInfo {
 	background-color: #333;
-	color: #a71c21;
+	color: white;
 	padding-top:4%;
 	padding-bottom:4%;
 }
@@ -169,8 +169,12 @@ body {
 
 .sponsors h1{
 	font-size: 350%;
+	margin-bottom: 20px;
 }
 
+.faq{
+	padding-bottom: 100px;
+}
 /* CSS for bottom banner */
 .banner-bottom {
 	background: url("pic1.jpg");

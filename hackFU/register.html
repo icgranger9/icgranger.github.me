@@ -34,12 +34,19 @@
 		<div class="container-fluid">	
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-items">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
 				</button>
+				<a class="navbar-brand" href="home.html" style="padding-top:0px;"><img src="navbar_logo.png" style="height:55px;"></a>
 			</div>
-
 			<div class="collapse navbar-collapse" id="nav-items">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="home.html">hackFU<span class="sr-only">(current)</span></a></li>
+					<li><a >100 people</a></li>
+					<li><a >24 hours</a></li>
+					<li><a >Manhattan NY</a></li>
+					<li><a >April 18-19</a></li>
 				</ul>
 			</div>
 		</div>
@@ -49,6 +56,7 @@
 	<section class="jumbotron">
 		<div class="container">
 			<h1>Registration</h1>
+			<p style="font-size:32px;">we won't forget you.</p>
 		</div>
 	</section>
 
@@ -66,25 +74,25 @@
 			<input id="organization" type="text" class="bar" placeholder="Fordham University" >
 			<div class="input-group">
 				<p> Dietary restrictions </p>
-				<select id="diet">
+				<select class="space" id="diet">
 					<option>None</other>
 					<option>Vegitarian</option>
 					<option>Vegan</option>
 					<option>Kosher</option>
 				</select>
-				<div>
+				<div class="space" >
 					<input id="diet-other" type="text" class="bar" placeholder="Place other dietary restrictions here" >
 				</div>
 			</div>	
-			<div class="input-group">
+			<div class="input-group" style="margin-bottom: 25px;">
 				<p>What languages do you speak:</p>
 				Java: <input type="checkbox" name="languages" id ="Java" value="Java" />
 				C / C++ / C#: <input type="checkbox" name="languages" id ="C" value="C" />
 				Python: <input type="checkbox" name="languages" id ="Python" value="Python"/><br/> 
 				HTML / CSS: <input type="checkbox" name="languages" id ="HTML" value="HTML"/>
 				JavaScript: <input type="checkbox" name="languages" id ="JavaScript" value="JavaScript"/> 
-				PHP: <input type="checkbox" name="languages" id="PHP" value="PHP"/>
-				Android: <input type="checkbox" name="languages" id ="Android" value="Android"/><br/> 
+				PHP: <input type="checkbox" name="languages" id="PHP" value="PHP"/><br/>
+				Android: <input type="checkbox" name="languages" id ="Android" value="Android"/>
 				IOS: <input type="checkbox" name="languages" id ="IOS" value="IOS"/>
 				Ruby: <input type="checkbox" name="languages" id ="Ruby" value="Ruby"/>
 				CLI: <input type="checkbox" name="languages" id ="CLI" value="CLI"/><br/> 
@@ -92,24 +100,24 @@
 				go: <input type="checkbox" name="languages" id ="Go" value="Go"/>
 			</div>
 			<p> Number of hackatons attended </p>
-			<input id="hackathon" type="number" class="bar" placeholder="3">
+			<input id="hackathon" type="number" class="bar" placeholder="i.e. 3">
 			<p> Age </p>
 			<input id="age" type="number" class="bar" placeholder="20">
 			<p> Major </p>
-			<input id="major" type="text" class="bar" placeholder="What are you studying">
+			<input id="major" type="text" class="bar" placeholder="What are you studying?">
 			<div class="input-group">
 				<p> Gender </p>
-				<select id="gender">
+				<select class="space" id="gender">
 					<option>Female</other>
 					<option>Male</option></br>
 				</select>
 				<div>
-					<input id="gender-other" type="text" class="bar" placeholder="Or, what do you prefer" >
+					<input id="gender-other" type="text" class="bar" placeholder="Or, what do you prefer?" >
 				</div>
 			</div>	
 			<p> Upload your resume </p>
 			<button class="space" type="button">Choose a file</button>
-			<div class="input-group">
+			<div class="input-group" style="margin-bottom: 25px;">
 				<p> Choose your shirt size: </p>
 				<select id="size">
 					<option>Mens Small</option>
