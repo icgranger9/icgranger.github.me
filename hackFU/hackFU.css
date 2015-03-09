@@ -10,6 +10,7 @@ body {
 	margin-top: 0%;
 	margin-bottom: 0%;
 	background: url("test_bg (4).png");
+	background-repeat: no-repeat;
 	/*background-size: 125% 100%;*/
 	background-position: 40% 100%;
 	position: relative;
@@ -98,12 +99,10 @@ body {
 	line-height: 17.5%;
 }
 
-}
 .btn {
 	color: maroon;
 	opacity: 1;
 	font-size: 135%;
-
 }
 
 /* CSS pertaining to the about section */
