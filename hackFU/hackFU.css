@@ -127,6 +127,16 @@ body {
 	padding-left: 10%;
 	padding-bottom: 5%
 }
+/* css email */
+.mc_embed_signup{
+	text-align: center;
+}
+
+.mc-field-group{
+	width:200px;
+	margin:0px;
+}
+
 /* CSS for keyInfo */
 .keyInfo {
 	background-color: #333;
