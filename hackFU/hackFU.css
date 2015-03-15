@@ -133,8 +133,10 @@ body {
 }
 
 .mc-field-group{
-	width:200px;
-	margin:0px;
+	width: 20%;
+	margin-left: 40%;
+	margin-right: 40%;
+	padding-bottom: 20px;
 }
 
 /* CSS for keyInfo */
